@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 1;
+}
+nav .logo{
+    float: left;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+nav .logo p{
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+nav ul{
+    float: right;
+    letter-spacing: 1px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+    color: white ;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 32px;
+}
+nav ul li a:hover{
+    color: darkturquoise;
+}
+
+/*jUMBOTRON*/
+.container-fluid{
+    width: 100%;
+    padding: 120px;
+    text-align: center;
+    font-size: 20px;
+}
+.jumbotron{
+    background-color: darkgrey;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    bottom: 1rem;
+}
+
+/* slides */
+.container{
+    width: 100%;
+    height: 675px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    top: 275px;
+    left: 50%;
+    bottom: 1px 0;
+}
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex; 
+}
+.slide{
+    width: 100%;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+.navigation{
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.navigation .bar{
+    padding-left: 45px;
+    padding-right: 45px;
+    background: transparent;
+    border: 1px solid white;
+    margin: 16px;
+    cursor: pointer;
+}
+.navigation .bar:hover{
+    background: white;
+    transition: 0.5s;
+}
+input#wallpaper2:checked ~ .slides .slide img{
+    margin-left: -100%;
+}
+input#wallpaper3:checked ~ .slides .slide img{
+    margin-left: -200%;
+}
+input#wallpaper4:checked ~ .slides .slide img{
+    margin-left: -300%;
+}
+input#wallpaper5:checked ~ .slides .slide img{
+    margin-left: -400%;
+}
+input{
+    visibility: hidden;
+}
+input#wallpaper1:checked ~ .slides .navigation #bar-1{
+    background: white;
+}
+input#wallpaper2:checked ~ .slides .navigation #bar-2{
+    background: white;
+}
+input#wallpaper3:checked ~ .slides .navigation #bar-3{
+    background: white;
+}
+input#wallpaper4:checked ~ .slides .navigation #bar-4{
+    background: white;
+}
+input#wallpaper5:checked ~ .slides .navigation #bar-5{
+    background: white;
+}
+/* footer */
+footer{
+    background: darkgray;
+    height: 10vw;
+    width: 100vw;
+    font-family: "open sans";
+    color: #fff;
+    position: static;
+    
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 7px;
+    padding: 20px 0;
+    bottom: 1rem;
+}
+.footer-content h3{
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 1rem;
+    color: black;
+    font-weight: bold;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 12px auto;
+    line-height: 29px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    text-align: center;
+    padding: 12px 0;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
